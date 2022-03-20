@@ -229,9 +229,11 @@
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
                   <div class="col">
                       <div class="card shadow-sm">
-                          <img src="./assets/img/aloe.png" alt=""
-                              class="bd-placeholder-img card-img-top" width="100%" height="225">
+                          <!-- <img v-on:click="toogle1 = !toogle1 | toogle1 != toogle2 | toogle1 != toogle3 | toogle1 != toogle4" v-bind:class="{besar: !toogle1}" src="./assets/img/aloe.png" alt=""
+                              class="bd-placeholder-img card-img-top zoom" width="100%" height="225"> -->
                           <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+
+                          <img src="./assets/img/aloe.png" type="button" data-bs-toggle="modal" data-bs-target="#nomor1">
 
                           <div class="card-body">
                               <h5><strong>{{ $t("produk.aloe") }}</strong></h5>
@@ -241,12 +243,20 @@
                           </div>
                       </div>
                   </div>
+
+                          <!-- <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <img src="./assets/img/aloe.png" alt="">
+                              </div>
+                            </div>
+                          </div> -->
                   <div class="col">
                       <div class="card shadow-sm">
-                          <img src="./assets/img/betel-nut.png" alt=""
-                              class="bd-placeholder-img card-img-top" width="100%" height="225">
+                          <!-- <img  v-on:click="toogle2 = !toogle2 | toogle2 != toogle1 | toogle2 != toogle3 | toogle2 != toogle4" v-bind:class="{besar: !toogle2}"  src="./assets/img/betel-nut.png" alt=""
+                              class="bd-placeholder-img card-img-top" width="100%" height="225"> -->
                           <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-
+                          <img src="./assets/img/betel-nut.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                           <div class="card-body">
                               <h5><strong>{{ $t("produk.betel") }}</strong></h5>
                               <p class="card-text">{{ $t("produk.descbetel") }}</p>
@@ -257,10 +267,10 @@
                   </div>
                   <div class="col">
                       <div class="card shadow-sm">
-                          <img src="./assets/img/lalpari-crove.png" alt=""
-                              class="bd-placeholder-img card-img-top" width="100%" height="225">
+                          <!-- <img  v-on:click="toogle3 = !toogle3 | toogle3 != toogle1 | toogle3 != toogle2 | toogle3 != toogle4" v-bind:class="{besar: !toogle3}"  src="./assets/img/lalpari-crove.png" alt=""
+                              class="bd-placeholder-img card-img-top" width="100%" height="225"> -->
                           <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-
+                            <img  src="./assets/img/lalpari-crove.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                           <div class="card-body">
                               <h5><strong>{{ $t("produk.lalpari") }}</strong></h5>
                               <p class="card-text">{{ $t("produk.desclalpari") }}</p>
@@ -271,10 +281,10 @@
                   </div>
                   <div class="col">
                       <div class="card shadow-sm">
-                          <img src="./assets/img/coofe-beans.png" alt=""
-                              class="bd-placeholder-img card-img-top" width="100%" height="225">
+                          <!-- <img v-on:click="toogle4 = !toogle4 | toogle4 != toogle1 | toogle4 != toogle3 | toogle4 != toogle2" v-bind:class="{besar: !toogle4}" src="./assets/img/coofe-beans.png" alt=""
+                              class="bd-placeholder-img card-img-top" width="100%" height="225"> -->
                           <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-
+                            <img src="./assets/img/coofe-beans.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                           <div class="card-body">
                               <h5><strong>{{ $t("produk.coffe") }}</strong></h5>
                               <p class="card-text">{{ $t("produk.desccoffe") }}</p>
@@ -283,6 +293,35 @@
                           </div>
                       </div>
                   </div>
+                  <div class="col">
+                      <div class="card shadow-sm">
+                          <!-- <img v-on:click="toogle4 = !toogle4 | toogle4 != toogle1 | toogle4 != toogle3 | toogle4 != toogle2" v-bind:class="{besar: !toogle4}" src="./assets/img/coofe-beans.png" alt=""
+                              class="bd-placeholder-img card-img-top" width="100%" height="225"> -->
+                          <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                            <img src="./assets/img/kopi-bubuk-kemasan.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                          <div class="card-body">
+                              <h5><strong>{{ $t("produk.coffebubuk") }}</strong></h5>
+                              <p class="card-text">{{ $t("produk.coffebubukdesc") }}</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card shadow-sm">
+                          <!-- <img v-on:click="toogle4 = !toogle4 | toogle4 != toogle1 | toogle4 != toogle3 | toogle4 != toogle2" v-bind:class="{besar: !toogle4}" src="./assets/img/coofe-beans.png" alt=""
+                              class="bd-placeholder-img card-img-top" width="100%" height="225"> -->
+                          <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                            <img src="./assets/img/biji-kopi-kemasan.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                          <div class="card-body">
+                              <h5><strong>{{ $t("produk.coffebiji") }}</strong></h5>
+                              <p class="card-text">{{ $t("produk.coffebijidesc") }}</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
               </div>
 
           </div>
@@ -292,6 +331,53 @@
     </div>
 </section>
 
+  <div class="modal fade" id="nomor1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img class="rounded" src="./assets/img/aloe.png" alt="">
+        </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img class="rounded" src="./assets/img/betel-nut.png" alt="">
+        </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img class="rounded" src="./assets/img/lalpari-crove.png" alt="">
+        </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img class="rounded" src="./assets/img/coofe-beans.png" alt="">
+        </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img class="rounded" src="./assets/img/kopi-bubuk-kemasan.png" alt="">
+        </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img class="rounded" src="./assets/img/biji-kopi-kemasan.png" alt="">
+        </div>
+      </div>
+  </div>
 
 
 
@@ -366,7 +452,7 @@
       </section><!-- End Team Section -->
   
           <!-- ======= Clients Section ======= -->
-          <section id="clients" class="clients container"  style = "max-width:90%; height:90%;">
+          <!-- <section id="clients" class="clients container"  style = "max-width:90%; height:90%;">
             <div class="container" data-aos="zoom-out">
       
               <div class="clients-slider swiper">
@@ -383,7 +469,8 @@
               </div>
       
             </div>
-          </section><!-- End Clients Section -->
+          </section> -->
+          <!-- End Clients Section -->
       
           <!-- ======= Call To Action Section ======= -->
           <section id="cta" class="cta">
@@ -465,7 +552,7 @@
             <div class="col-lg-3 container">
               <div  style="margin-top:40px" class="text-center">
                   <img src="./assets/img/qr-whatsapp.png" alt="">
-                  <p class="container text-muted">{{ $t("qr.whatsapp") }}</p>
+                  <p class="container text-muted justify-center">{{ $t("qr.whatsapp") }}</p>
               </div>
             </div>
  
@@ -546,6 +633,8 @@
   
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <div id="preloader"></div>
+
+
   
 </template>
 
@@ -554,6 +643,10 @@ export default {
   data() {
     return{
       language: null,
+      toogle1: 'false',
+      toogle2: 'false',
+      toogle3: 'false',
+      toogle4: 'false'
     }
   },
   methods: {
@@ -571,5 +664,13 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
+.besar{
+  transform: scale(2,2);
+  transition: transform 2s;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 50%;
+}
+
 </style>
