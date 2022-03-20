@@ -65,6 +65,7 @@
             </div>
   
             <div class="col-lg-7 ">
+              <p class="text-center text-muted">{{ $t("tentang.keterangan") }}</p>
               <h3 class="pt-0 pt-lg-5 text-center">{{ $t("tentang.judulvisi") }}</h3>
   
               <!-- Tabs -->
